@@ -12,7 +12,109 @@
         GENERAL
 -----------------------*/
 
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
 
 /*---------------------
         UTILITIES
 -----------------------*/
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/*---------------------
+        LAYOUT
+-----------------------*/
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/*---------------------
+        BUTTON
+-----------------------*/
+
+.btn {
+    font-family: "PT Sans", sans-serif;
+    background-color: #0084fd;
+    padding: 5px 35px;
+    border-radius: 30px;
+    border: #0084fd;
+    font-size: 13px;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-small {
+    padding: 5px 15px;
+}
+
+.btn-big {
+    padding: 16px 50px;
+}
+
+.btn-second, .btn-second a {
+    background-color: #fff;
+    color: #5a6e7f;
+}
+
+.btn-third, .btn-third a {
+    background-color: #fff;
+    color: #9792e4;
+}
+
+.btn-fourth {
+    background-color: #9792e4;    
+}
+
+/*---------------------
+        HEADER
+-----------------------*/
+
+header {
+    background-color: #0084fd;
+    padding: 15px 0;
+}
+
+.logo {
+    width: 50px;
+}
+
+header ul > * {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
