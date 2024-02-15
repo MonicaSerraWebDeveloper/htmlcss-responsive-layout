@@ -47,10 +47,6 @@ img {
     position: relative;
 }
 
-.absolute {
-    position: absolute;
-}
-
 /*---------------------
         LAYOUT
 -----------------------*/
@@ -62,12 +58,17 @@ img {
     padding-right: 15px;
 }
 
+.container-medium {
+    max-width: 878px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
 }
+
 
 .col {
     padding: 10px;
@@ -110,12 +111,12 @@ p {
 }
 
 .title-s-regular-primary {
-    font-size: 22px;
+    font-size: 24px;
     color: #9792e4;
 }
 
 .title-s-regular-fourth {
-    font-size: 22px;
+    font-size: 24px;
     color: #fff;
 }
 
@@ -175,7 +176,6 @@ figcaption {
     font-weight: 6500;
     text-transform: uppercase;
 }
-
 
 /*---------------------
         BUTTON
@@ -284,6 +284,56 @@ header a {
 }
 
 /*---------------------
+        PLANNING 
+-----------------------*/
+
+.planning {
+    background-color: #9792e4;
+    padding: 90px 0 40px 0;
+}
+
+.planning .col {
+    width: calc(100% / 2);
+}
+
+.planning h3 {
+    padding-bottom: 50px;
+}
+
+.graphic-planning {
+    width: 400px;
+}
+
+.card-planning-left {
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.card-planning {
+    min-height: 700px;
+    align-items: flex-end;
+}
+
+.card-planning-right {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.card-planning-right img {
+    padding-bottom: 18px;
+}
+
+.card-planning-right i {
+    background-color: #9792e4;
+    padding: 14px 16px;
+    border-radius: 100%;
+}
+
+
+/*---------------------
         CARD 
 -----------------------*/
 
@@ -341,6 +391,23 @@ header a {
 
     .side-box {
         width: 100%;
+    }
+    /* PLANNING */
+
+    .planning .col {
+        width: 100%;
+    }
+
+    .card-planning-left {
+        padding-right: 0;
+    }
+
+    .card-planning {
+        min-height: 100%;
+    }
+
+    .card-planning-right {
+        margin: 0;
     }
 }
 
