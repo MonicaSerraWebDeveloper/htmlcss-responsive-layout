@@ -15,6 +15,7 @@
 body {
     font-family: "PT Sans", sans-serif;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 img {
@@ -38,23 +39,143 @@ img {
     align-items: center;
 }
 
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 /*---------------------
         LAYOUT
 -----------------------*/
 
 .container {
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
+
+.col {
+    padding: 10px;
+}
+
+/*---------------------
+        TYPOGRAPHY
+-----------------------*/
+
+h2 {
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-bottom: 18px;
+}
+
+p {
+    padding-bottom: 15px;
+    line-height: 28px;
+}
+
+.title-xs-regular-primary {
+    font-size: 20px;
+    color: #9792e4;
+}
+
+.title-xs-regular-secondary {
+    font-size: 20px;
+    color: #0084fd;
+}
+
+.title-xs-regular-third {
+    font-size: 20px;
+    color: #111;
+}
+
+.title-s-regular-primary {
+    font-size: 22px;
+    color: #9792e4;
+}
+
+.title-s-regular-fourth {
+    font-size: 22px;
+    color: #fff;
+}
+
+.title-m-regular-primary {
+    font-size: 30px;
+    color: #9792e4;
+}
+
+.title-m-regular-fourth {
+    font-size: 30px;
+    color: #fff;
+}
+
+.title-l-regular-primary {
+    font-size: 38px;
+    color: #9792e4;
+}
+
+.title-xl-regular-fifth {
+    font-size: 44px;
+    color: #fdc15f;
+}
+
+.p-regular-primary {
+    font-size: 18px;
+    color: #111;
+}
+
+.p-italic-primary {
+    font-size: 18px;
+    color: #111;
+    font-style: italic;
+}
+
+.p-regular-secondary {
+    font-size: 18px;
+    color: #fff;
+}
+
+.p-regular-uppercase-secondary {
+    font-size: 18px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.p-semi-bold-third {
+    color: #5a6e7f;
+    font-weight: 600;
+}
+
+.p-regular-third {
+    color: #5a6e7f;
+}
+
+figcaption {
+    color: #fff;
+    font-weight: 6500;
+    text-transform: uppercase;
+}
+
 
 /*---------------------
         BUTTON
@@ -63,10 +184,15 @@ img {
 .btn {
     font-family: "PT Sans", sans-serif;
     background-color: #0084fd;
-    padding: 5px 35px;
+    padding: 8px 35px;
     border-radius: 30px;
     border: #0084fd;
-    font-size: 13px;
+    font-size: 12px;
+}
+
+.btn-letter-spacing {
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 .btn a {
@@ -123,6 +249,65 @@ header a {
     display: none;
 }
 
+/*---------------------
+        INTRO
+-----------------------*/
+
+.intro > .container {
+    padding: 40px 0 90px 0;
+}
+
+.intro .col {
+    width: calc(100% / 3);
+}
+
+.intro .col-grow {
+    flex-grow: 1;
+}
+
+.side-box {
+    width: calc(100% / 2);
+}
+
+.side-box-left {
+    padding-right: 60px;
+}
+
+.side-box-right {
+    display: flex;
+}
+
+.phone-img {
+    width: 250px;
+    bottom: -20px;
+    right: 0;
+}
+
+/*---------------------
+        CARD 
+-----------------------*/
+
+.box-card {
+    min-height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-card > i {
+    font-size: 80px;
+    color: #0084fd;
+    padding-bottom: 18px;
+}
+
+.col-grow .box-card {
+    text-align: left;
+}
+
+.box-card-intro {
+    background-color: #b5ddff;
+}
+
 
 /*---------------------
     MEDIA QUERY TABLET
@@ -144,5 +329,31 @@ header a {
 
     .hamburger-icon {
         display: block;
+        color: #fff;
+    }
+
+    /* INTRO */
+
+    .box-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-box {
+        width: 100%;
+    }
+}
+
+/*---------------------
+    MEDIA QUERY MOBILE
+-----------------------*/
+
+@media screen and (max-width: 480px) {
+    .intro .col {
+        width: 100%;
+    }
+
+    .col {
+        padding-bottom: 20px;
     }
 }
