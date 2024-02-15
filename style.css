@@ -118,3 +118,31 @@ header a {
     text-decoration: none;
     color: #fff;
 }
+
+.hamburger-icon {
+    display: none;
+}
+
+
+/*---------------------
+    MEDIA QUERY TABLET
+-----------------------*/
+
+@media screen and (max-width: 1140px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+}
