@@ -418,7 +418,7 @@ header a {
 }
 
 /*---------------------
-        TESTIMONIALS 
+        BENEFITS 
 -----------------------*/
 
 .benefits {
@@ -485,6 +485,16 @@ header a {
     .card-planning-right img {
         width: 100%;
     }
+
+    /* BENEFITS */
+
+    .benefits .col {
+        width: calc(100% / 2);
+    }
+
+    .benefits h2 {
+        text-align: center;
+    }
 }
 
 /*---------------------
@@ -507,5 +517,11 @@ header a {
 
     .feedback-container {
         text-align: center;
+    }
+
+    /* BENEFITS */
+
+    .benefits .col {
+        width: 100%;
     }
 }
