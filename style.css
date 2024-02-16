@@ -35,6 +35,10 @@ img {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -86,7 +90,7 @@ img {
 }
 
 .col {
-    padding: 10px;
+    padding: 15px;
 }
 
 /*---------------------
@@ -117,6 +121,10 @@ img {
     background-color: #9792e4;
     padding: 20px 20px 50px;
     border-radius: 50px;
+}
+
+.box-card-benefit {
+    background-color: #fff;
 }
 
 /*---------------------
@@ -172,6 +180,12 @@ p {
     color: #fdc15f;
 }
 
+.number-xl-benefits {
+    font-size: 60px;
+    color: #9792e4;
+    font-weight: 900;
+}
+
 .p-regular-primary {
     font-size: 18px;
     color: #111;
@@ -216,10 +230,10 @@ figcaption {
 .btn {
     font-family: "PT Sans", sans-serif;
     background-color: #0084fd;
-    padding: 8px 35px;
+    padding: 8px 40px;
     border-radius: 30px;
     border: #0084fd;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .btn-letter-spacing {
@@ -251,7 +265,8 @@ figcaption {
 }
 
 .btn-fourth {
-    background-color: #9792e4;    
+    background-color: #9792e4;  
+    color: #fff;  
 }
 
 /*---------------------
@@ -400,6 +415,19 @@ header a {
     height: 200px;
     border-radius: 100px;
     object-fit: cover;
+}
+
+/*---------------------
+        TESTIMONIALS 
+-----------------------*/
+
+.benefits {
+    background-color: #9792e4;
+    padding: 50px 0;
+}
+
+.benefits .col {
+    width: calc(100% / 3);
 }
 
 
