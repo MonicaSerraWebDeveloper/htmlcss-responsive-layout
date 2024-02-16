@@ -88,6 +88,14 @@ img {
     max-width: 992px;
 }
 
+.container-small {
+    max-width: 768px;
+}
+
+.container-xsmall {
+    max-width: 568px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -214,6 +222,12 @@ p {
     text-transform: uppercase;
 }
 
+.p-regular-uppercase-secondary {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .p-semi-bold-third {
     color: #5a6e7f;
     font-weight: 600;
@@ -221,6 +235,10 @@ p {
 
 .p-regular-third {
     color: #5a6e7f;
+}
+
+small, small a {
+    color: #fff;
 }
 
 figcaption {
@@ -457,6 +475,21 @@ header a {
 .absolute {
     position: absolute;
     right: 15%;
+}
+
+/*---------------------
+        PRINCIING 
+-----------------------*/
+
+.pricing {
+    background-color: #9792e4;
+    padding: 50px 0;
+}
+
+.text-align-center button {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
 /*---------------------
