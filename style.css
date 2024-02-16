@@ -69,9 +69,33 @@ img {
     margin-right: -15px;
 }
 
-
 .col {
     padding: 10px;
+}
+
+/*---------------------
+        CARD 
+-----------------------*/
+
+.box-card {
+    min-height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-card > i {
+    font-size: 80px;
+    color: #0084fd;
+    padding-bottom: 18px;
+}
+
+.col-grow .box-card {
+    text-align: left;
+}
+
+.box-card-intro {
+    background-color: #b5ddff;
 }
 
 /*---------------------
@@ -187,7 +211,7 @@ figcaption {
     padding: 8px 35px;
     border-radius: 30px;
     border: #0084fd;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .btn-letter-spacing {
@@ -201,7 +225,7 @@ figcaption {
 }
 
 .btn-small {
-    padding: 5px 15px;
+    padding: 5px 10px;
 }
 
 .btn-big {
@@ -235,7 +259,11 @@ header {
     width: 50px;
 }
 
-header ul > * {
+header ul {
+    align-items: center;
+}
+
+header .flex > * {
     list-style: none;
     margin-left: 30px;
 }
@@ -254,7 +282,7 @@ header a {
 -----------------------*/
 
 .intro > .container {
-    padding: 40px 0 90px 0;
+    padding: 40px 0 0 0;
 }
 
 .intro .col {
@@ -263,6 +291,10 @@ header a {
 
 .intro .col-grow {
     flex-grow: 1;
+}
+
+.col-grow  .box-card {
+    padding-bottom: 0;
 }
 
 .side-box {
@@ -274,13 +306,12 @@ header a {
 }
 
 .side-box-right {
-    display: flex;
+    justify-content: center;
 }
 
 .phone-img {
     width: 250px;
-    bottom: -30px;
-    right: 0;
+    display: block;
 }
 
 /*---------------------
@@ -335,33 +366,6 @@ header a {
     padding: 14px 16px;
     border-radius: 100%;
 }
-
-
-/*---------------------
-        CARD 
------------------------*/
-
-.box-card {
-    min-height: 100%;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.box-card > i {
-    font-size: 80px;
-    color: #0084fd;
-    padding-bottom: 18px;
-}
-
-.col-grow .box-card {
-    text-align: left;
-}
-
-.box-card-intro {
-    background-color: #b5ddff;
-}
-
 
 /*---------------------
     MEDIA QUERY TABLET
