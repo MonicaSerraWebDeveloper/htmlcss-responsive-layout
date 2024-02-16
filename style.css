@@ -102,21 +102,8 @@ img {
         TYPOGRAPHY
 -----------------------*/
 
-h2 {
-    padding-bottom: 20px;
-}
-
-h3 {
-    padding-bottom: 20px;
-}
-
-h4 {
-    padding-bottom: 18px;
-}
-
 p {
-    padding-bottom: 15px;
-    line-height: 28px;
+    line-height: 1.5;
 }
 
 .title-xs-regular-primary {
@@ -263,7 +250,7 @@ header ul {
     align-items: center;
 }
 
-header .flex > * {
+nav ul > *  {
     list-style: none;
     margin-left: 30px;
 }
@@ -281,8 +268,8 @@ header a {
         INTRO
 -----------------------*/
 
-.intro > .container {
-    padding: 40px 0 0 0;
+.intro {
+    padding: 40px 0 90px 0;
 }
 
 .intro .col {
@@ -301,8 +288,12 @@ header a {
     width: calc(100% / 2);
 }
 
-.side-box-left {
-    padding-right: 60px;
+.intro .side-box > *:not(:first-child) {
+    margin: 10px 0;
+}
+
+.intro .margin-bottom > *:not(:first-child) {
+    margin: 10px 0;
 }
 
 .side-box-right {
@@ -326,6 +317,9 @@ header a {
 .planning .col {
     width: calc(100% / 2);
 }
+.container-medium .margin-bottom > * {
+    margin-bottom: 20px;
+}
 
 .planning h3 {
     padding-bottom: 50px;
@@ -338,26 +332,31 @@ header a {
 .card-planning-left {
     flex-direction: column;
     padding-right: 50px;
+    gap: 100px;
 }
 
 .card-planning-left img {
-    width: 600px;
+    max-width: 600px;
 }
 
 .card-planning {
-    min-height: 800px;
     align-items: flex-end;
 }
 
 .card-planning-right {
     background-color: #fff;
-    margin: 20px;
+    margin: 30px 60px 0 30px;
     padding: 20px;
     text-align: center;
     border-radius: 50px;
 }
 
+.align-items-flex-end {
+    align-items: flex-end;
+}
+
 .card-planning-right img {
+    max-width: 250px;
     padding-bottom: 18px;
 }
 
@@ -366,6 +365,7 @@ header a {
     padding: 14px 16px;
     border-radius: 100%;
 }
+
 
 /*---------------------
     MEDIA QUERY TABLET
@@ -377,12 +377,7 @@ header a {
         width: 100%;
     }
 
-    .row {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    nav {
+    nav,  header .btn {
         display: none;
     }
 
@@ -401,6 +396,11 @@ header a {
     .side-box {
         width: 100%;
     }
+ 
+    .side-box-right img {
+        margin-top: 20px;
+    }
+
     /* PLANNING */
 
     .planning .col {
