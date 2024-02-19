@@ -309,6 +309,8 @@ figcaption {
 header {
     background-color: #0084fd;
     padding: 15px 0;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -370,7 +372,7 @@ header a {
 }
 
 .phone-img {
-    width: 250px;
+    width: 300px;
     display: block;
 }
 
